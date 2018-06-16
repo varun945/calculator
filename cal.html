@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>calcalutor</title>
+
+<body>
+	
+
+	<!--<input  id="a" type="number" placeholder="number">
+	<input  id="b" type="number" placeholder="number">
+-->
+	<button  type="button" onclick="cal()">calculate</button>
+	<p id='r'> answer is:</p>
+
+	
+	
+	
+
+<script >
+	function cal() {
+		var a=parseInt(prompt("enter first number"));
+		var b=parseInt(prompt("enter second number"));
+	    var swch= prompt("enter arthamtic operation");
+	    switch(swch)
+	    {
+	    	case "+" :document.getElementById('r').innerHTML=a+b; break;
+	    	case "-" :document.getElementById('r').innerHTML=a-b; break;
+	    	case "*" :document.getElementById('r').innerHTML=a*b; break;
+	    	case "/" :document.getElementById('r').innerHTML=a/b; break;
+	    }
+	}
+</script>
+</body>
+</html>
